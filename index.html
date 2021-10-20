@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>90's Underground Rap</title>
+</head>
+<body>
+    <div id="container">
+        
+        <input id="tempoRange" type="range" min="0" max="">
+        <div id="tempoVolume">
+            <p id="inicioMusica"></p>
+            <p id="finalMusica"></p>
+            <img src="./images/sound.png" onclick="mute()" id="mudo" class="botao">
+            <input id="volumeRange" type="range" min="0" max="100">
+            <img id="album" src=''>
+        </div>
+         <div id="botoes">
+             <img src="./images/back.png" onclick="voltarFaixa()" id="voltarF" class="botao">
+             <img src="./images/backwards.png" onclick="voltar()" id="voltarT" class="botao">
+             <img src="./images/play.png" onclick="playPause()" id="playpause" class="botao">
+             <img src="images/forward.png" onclick="avancar()" id="avancarT" class="botao">
+             <img src="images/next.png" onclick="avancarFaixa()" id="avancarF" class="botao">
+         </div>
+        <h1 id="musica"></h1>
+        <h2 id="artista"></h2>
+        <audio id="faixa" src="" type="audio/mpeg"></audio>
+    </div>
+        <div id="playlist">
+            <ul id="lista">
+                <li>Afu-Ra - Defeat <img src='./images/sound.png' class="botaoP" onclick="music1()"></li>
+                <li>Das EFX - Baknaffek <img src='./images/sound.png' class="botaoP" onclick="music2()"></li>
+                <li>Mobb Deep - Shook Ones Pt. II <img src='./images/sound.png' class="botaoP" onclick="music3()"></li>
+                <li>Mop Top - Im Alright  Forever (Verbal Assault)<img src='./images/sound.png' class="botaoP" onclick="music4()"></li>
+                <li>Wu-Tang Clan - Da Mystery Of Chessboxin<img src='./images/sound.png' class="botaoP" onclick="music5()"></li>
+            </ul>
+        </div>
+    
+
+
+    <script src='./js/script.js'></script>
+</body>
+</html>
+

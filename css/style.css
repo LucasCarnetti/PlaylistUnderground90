@@ -1,0 +1,12 @@
+.botao{
+    max-width: 30px;
+}
+.botao:hover{
+    cursor:pointer;
+}
+.botaoP{
+    max-width: 15px;
+}
+.botaoP:hover{
+    cursor:pointer;
+}
